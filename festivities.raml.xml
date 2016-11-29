@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-16"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="application" xml:lang="en"></doc>
+  <resources base="http://ec2-35-161-102-173.us-west-2.compute.amazonaws.com/FestivitiesWeb/rest/">
+    <resource id="/Festivities" path="/Festivities">
+      <method id="Crear" name="POST">
+        <doc title="Crear" xml:lang="en"></doc>
+        <request />
+      </method>
+      <method id="Actualizar" name="PUT">
+        <doc title="Actualizar" xml:lang="en"></doc>
+        <request />
+      </method>
+    </resource>
+    <resource id="/LoadFile" path="/LoadFile">
+      <method id="LoadFile" name="POST">
+        <doc title="LoadFile" xml:lang="en"></doc>
+        <request />
+      </method>
+    </resource>
+    <resource id="/SearchAll/{country}&amp;{languague}" path="/SearchAll/{country}&amp;{languague}">
+      <method id="getSearchAll" name="GET">
+        <doc title="getSearchAll" xml:lang="en"></doc>
+        <request>
+          <param name="languague" type="xsd:string">
+            <doc title="languague" xml:lang="en"></doc>
+          </param>
+          <param name="country" type="xsd:string">
+            <doc title="country" xml:lang="en"></doc>
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource id="/SearchByParam" path="/SearchByParam">
+      <method id="getSearchByParam" name="POST">
+        <doc title="getSearchByParam" xml:lang="en"></doc>
+        <request />
+      </method>
+    </resource>
+    <resource id="/MessagesApp/{country}&amp;{languague}" path="/MessagesApp/{country}&amp;{languague}">
+      <method id="getMessages" name="GET">
+        <doc title="getMessages" xml:lang="en"></doc>
+        <request>
+          <param name="languague" type="xsd:string">
+            <doc title="languague" xml:lang="en"></doc>
+          </param>
+          <param name="country" type="xsd:string">
+            <doc title="country" xml:lang="en"></doc>
+          </param>
+        </request>
+      </method>
+    </resource>
+  </resources>
+</application>
