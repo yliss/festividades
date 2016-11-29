@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.1">
+<!--
+<deployment>
+    <exclusions>
+  		<module name="javax.ws.rs.api"/>
+  		<module name="org.jboss.resteasy.resteasy-jaxrs" />
+  		<module name="javaee.api" />
+	</exclusions>
+</deployment>
+-->
+<sub-deployment name="FestivitiesWeb-0.war">
+    <exclusions>
+  		<module name="javax.ws.rs.api"/>
+  		<module name="org.jboss.resteasy.resteasy-jaxrs" />
+  		<module name="javaee.api" />
+  		<module name="org.jvnet.mimepull" /> 
+	</exclusions>
+	<dependencies>
+		<module name="javax.servlet.api" export="false"/>
+	</dependencies>
+</sub-deployment>
+</jboss-deployment-structure>
