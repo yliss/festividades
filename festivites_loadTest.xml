@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<festivities>
+	<festivity>
+		<name>Jimmy's event</name>
+		<place>Clark's castle</place>
+		<start>2016-02-22T19:16:01.001Z</start>
+		<end>2016-07-30T19:16:01.001Z</end>
+	</festivity>
+	<festivity>
+		<name>Craig's recognition</name>
+		<place>West's joint</place>
+		<start>2015-10-27T14:01:09.009Z</start>
+		<end>2015-12-12T14:01:09.009Z</end>
+	</festivity>
+</festivities>
